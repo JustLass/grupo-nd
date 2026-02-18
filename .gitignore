@@ -1,0 +1,11 @@
+data/
+*log
+.env
+*.pdf
+*.csv
+*.db
+*.zip
+*.xlsx
+*.json
+*.txt
+Tabelas extraidas/
