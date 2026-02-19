@@ -90,26 +90,17 @@ Com a modelagem validada, montei o pipeline final para extrair os detalhes de to
 - **Pausa aleatoria** de 0.8 a 1.8s entre requisicoes por worker
 
 Saida em:
+`
+data/details/contracheques/
+`
 
-\data/details/contracheques/
-    detalhes_worker_0.csv
-    detalhes_worker_1.csv
-    detalhes_worker_2.csv
-    detalhes_worker_3.csv
-    log_worker_0.txt
-    log_worker_1.txt
-    log_worker_2.txt
-    log_worker_3.txt
-\
----
 
 ## Estrutura final das colunas
 
 | Coluna | Origem | Descricao |
 |---|---|---|
 | id_registro | API detalhe | ID unico do registro no portal |
-| 
-ome | API detalhe | Nome do servidor |
+| nome | API detalhe | Nome do servidor |
 | ef_matricula | cargoefetivo | Matricula do vinculo efetivo |
 | ef_cargo | cargoefetivo | Cargo efetivo ocupado |
 | ef_orgao_exercicio | cargoefetivo | Orgao onde exerce |
@@ -133,8 +124,7 @@ ome | API detalhe | Nome do servidor |
 ## Tecnologias utilizadas
 
 - **Python 3** com Jupyter Notebook
-- 
-equests - requisicoes HTTP as APIs
+- requests - requisicoes HTTP as APIs
 - pandas - manipulacao e salvamento dos dados
 - concurrent.futures.ThreadPoolExecutor - paralelismo das extracoes
 - logging - logs estruturados por worker
